@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
 	static File courses = new File("Courses.txt");
 	static Scanner s = new Scanner(System.in);
 	
@@ -33,9 +34,7 @@ public class Main {
 		String selection;
 		
 		Register register = new Register();
-//		FileWriter w = new FileWriter("output.txt");
-//		w.write("");
-//		w.flush();
+
 		
 		
 		
@@ -49,7 +48,6 @@ public class Main {
 			System.out.println("3. add course by ID for enrolled student");
 			System.out.println("4. drop course from schedule from enrolled student");
 			System.out.println("5. search and display student name and schedule");
-			//System.out.println("6. print schedule for student ");
 			System.out.println("7: Exit");
 			choice = s.nextInt();
 			
@@ -58,22 +56,18 @@ public class Main {
 			
 			case 1:
 
-				System.out.println("Please enter first name of student: ");
+				System.out.println("Please enter first name and last name of student seperated by a space(Example: |John Frankenstein|): ");
 				String firstName = s.next();
-				System.out.println("Please enter last name of student: ");
+
 				String lastName = s.next();
 				Student student = new Student(firstName, lastName);			
 				register.addStudent(student);
-//				w.write(title + " was added to libary\n");
-//				w.flush();
 				break; 
 			case 2: 
 				System.out.println("Which would You like to remove Please make a selection from the list");
 				register.display();
 				System.out.println("Enter student ID for removal selection");
 				selection = s.next();
-//				w.write(library.searchBooks(choice) + " was removed from libary\n");
-//				w.flush();
 				register.removeStudent(selection);
 
 
@@ -118,19 +112,9 @@ public class Main {
 				
 				
 				break;
-//			case 6:
-//				File f = new File("output.txt");
-//				Scanner s = new Scanner(f);
-//				
-//				while (s.hasNextLine())
-//				{
-//					System.out.println(s.nextLine());
-//				}
-//				s.close();
-//				break;
+
 			}//switch
 		}//while loop
-	//	w.close();
 	}// main
 	
 }

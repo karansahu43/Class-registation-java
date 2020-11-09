@@ -1,8 +1,8 @@
 Calculus-III 123456789 4 
-Human-Sexuality 242903427 3
+Human-Anatomy 242903427 3
 Chemistry-I 234178909 3
 Weightlifting-101 293849204 3
-Picking-upGirls 930484940 8
+Pokemon101 930484940 8
 History-I 394028403 3
 English-II 479385028 3
 Programing-Fundementals-I 382938450 3
