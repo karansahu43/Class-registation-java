@@ -44,7 +44,7 @@ public class Student {
 	}
 	public void display()
 	{
-		System.out.println("These is the course or courses the student is taking");
+		System.out.println("These are the course or courses the student is taking");
 		for(Course b: studentCourses)
 		{
 			System.out.println(b);
