@@ -10,7 +10,7 @@ public class Main {
 	static Scanner s = new Scanner(System.in);
 	
 	public static void main(String[] args) throws FileNotFoundException  {
-		// TODO Auto-generated method stub
+		
 
 		ArrayList<Course> courselist = new ArrayList<Course>();
 		Scanner f = new Scanner(courses);
@@ -49,7 +49,7 @@ public class Main {
 			System.out.println("3. add course by ID for enrolled student");
 			System.out.println("4. drop course from schedule from enrolled student");
 			System.out.println("5. search and display student name and schedule");
-			System.out.println("6. print schedule for student ");
+			//System.out.println("6. print schedule for student ");
 			System.out.println("7: Exit");
 			choice = s.nextInt();
 			
@@ -121,7 +121,7 @@ public class Main {
 //			case 6:
 //				File f = new File("output.txt");
 //				Scanner s = new Scanner(f);
-//				// TODO Auto-generated method stub
+//				
 //				while (s.hasNextLine())
 //				{
 //					System.out.println(s.nextLine());
